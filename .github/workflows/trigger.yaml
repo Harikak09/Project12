@@ -23,7 +23,7 @@ jobs:
           aws-region: eu-west-1
 
       - name: Terraform fmt
-        run: terraform fmt -check
+        run: terraform fmt -recursive
         working-directory: terraform
 
       - name: Terraform init
